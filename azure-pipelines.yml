@@ -18,6 +18,6 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.StagingDirectory)/bin/$(buildConfiguration)/netcoreapp2.1'
+    PathtoPublish: '$(Build.StagingDirectory)/DevOpsDemoApp/bin/$(buildConfiguration)/netcoreapp2.1'
     ArtifactName: 'drop'
     publishLocation: 'Container'
