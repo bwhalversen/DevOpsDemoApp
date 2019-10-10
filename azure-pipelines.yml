@@ -21,3 +21,10 @@ steps:
     PathtoPublish: '$(Build.SourcesDirectory)/DevOpsDemoApp/bin/$(buildConfiguration)/netcoreapp2.1'
     ArtifactName: 'drop'
     publishLocation: 'Container'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.SourcesDirectory)/static/'
+    ArtifactName: 'static'
+    publishLocation: 'Container'
+
